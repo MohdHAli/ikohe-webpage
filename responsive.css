@@ -14,7 +14,7 @@
 
   .navConatiner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 12px;
     padding-right: 0;
     margin-top: 15px;
@@ -68,10 +68,10 @@
   }
 
   .banner img {
-    width: 100%;        
+    width: 80%;        
     height: auto;
     margin: 20px 20px 20px 20px;  
-    border-radius:200px / 200px;
+    border-radius: 100px / 50px;
   }
 
     .container {
@@ -329,6 +329,153 @@
   }
 }
 
+
+
+
+
+@media (max-width: 768px){
+
+  .header {
+    padding: 12px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;  /* stack logo + nav items */
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navConatiner {
+    flex-direction: column;  /* stack nav links vertically */
+    align-items: flex-end;
+    gap: 10px;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .navConatiner ul {
+    font-size: 14px;
+  }
+
+  .navConatiner img {
+    display: none; /* hide extra search icon on tablet */
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: 14px;
+    height: 42px;
+  }
+
+
+  .belt {
+    flex-direction: column;      /* stack sander1 & sander2 */
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .sander1,
+  .sander2 {
+    flex-direction: column;      /* stack text and image vertically */
+    width: 100%;
+    max-width: 600px;            /* keep it neat on tablets */
+    height: auto;
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sander1 h2,
+  .sander1 p,
+  .sander2 h2,
+  .sander2 p {
+    margin-left: 0;              /* reset left margin */
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .imgsan1,
+  .image54,
+  .image55 {
+    width: 100%;
+    max-width: 280px;            /* scale down image size */
+    height: auto;
+    margin: 15px auto 0 auto;    /* center align */
+  }
+
+  .section {
+    flex-direction: column;         /* keep text & image side by side */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 0;              /* remove extra left margin */
+    height: auto;
+  }
+
+  .text {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .text h2 {
+    font-size: 22px;             /* smaller heading */
+    margin-left: 0;
+  }
+
+  .text p {
+    font-size: 14px;
+    margin-left: 0;
+    line-height: 1.6;
+  }
+
+  .images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 300px;            /* scale down for tablet */
+    height: auto;
+    margin-left: 0;
+  }
+
+
+
+
+    footer .row{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+    
+  }
+  footer{
+    height: fit-content;
+  }
+
+  footer .col1, footer .col2, footer .col3, footer .col4, footer .col5 {
+    width: 60%;
+    margin: 20px 0;
+  }
+
+  footer p, footer a {
+    font-size: 20px; 
+  }
+
+
+
+
+
+
+}
+
 /* 📱 Tablet Styles*/
 @media (max-width: 1024px) {
 
@@ -350,10 +497,7 @@
     font-size: 14px; /* slightly smaller text */
   }
 
-  .navConatiner img {
-    width: 10px;
-    height: 10px;
-  }
+
 
   button {
     width: 90px;
@@ -413,6 +557,94 @@
     height: auto;
   }
 
+    .Products {
+    flex-wrap: wrap;              /* allow wrapping */
+    justify-content: center;      /* center the items */
+    gap: 20px;                    /* spacing between cards */
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .Products > div {
+    flex: 1 1 calc(45% - 20px);   /* 2 cards per row */
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;             /* optional: card look */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .Products img {
+    width: 100%;                  /* responsive images */
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .Products p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .bb {
+    width: 100%;
+    max-width: 200px;
+    margin-left: 0;
+  }
+.ecat {
+    flex-wrap: wrap;             /* allow wrapping of cards */
+    justify-content: center;     /* center align */
+    width: 100%;                 /* full width */
+    height: auto;                /* auto height */
+    margin: 60px 0 0 50px;           /* center horizontally */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .etext {
+    width: 100%;                 /* full width for text */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ehead {
+    font-size: 26px;             /* slightly smaller heading */
+    margin-left: 0;
+  }
+
+  .epara {
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .ecat1,
+  .ecat2,
+  .downl {
+    width: 45%;                  /* two cards per row */
+    max-width: 320px;
+    height: auto;
+  }
+
+  .eimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .ebutton {
+    position: relative;          /* avoid overflow */
+    width: 100%;
+    max-width: 200px;
+    height: 48px;
+    margin: 10px auto 0 auto;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    display: block;
+  }
 
   
   .section {
@@ -531,3 +763,4 @@
 
 
 }
+  
